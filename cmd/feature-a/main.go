@@ -1,9 +1,13 @@
 package main
 
 import (
-	"fmt"
+	"context"
+
+	"github.com/suzushin54/go-workspace-example/pkg/logger"
 )
 
 func main() {
-	fmt.Println("Hello from Feature A!")
+	LogLevel := "info"
+	l := logger.CreateLogger(&LogLevel)
+	l.Infof(context.Background(), "Hello from Feature A!")
 }
