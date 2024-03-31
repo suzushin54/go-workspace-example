@@ -1,6 +1,6 @@
 module feature-b
 
-go 1.20
+go 1.22
 
 require github.com/suzushin54/go-workspace-example v0.0.0-20240329145212-0762a263ef1a
 
